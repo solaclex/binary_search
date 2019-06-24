@@ -30,7 +30,7 @@ int main(){
     scanf("%d", &A[i]);
   }
   lb = 0;
-  ub = 10000;
+  ub = 100000000;
   while(ub - lb > 1){
     int m = (lb + ub) / 2;
     if(p(m) >0) {
