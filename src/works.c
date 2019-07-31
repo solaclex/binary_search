@@ -8,7 +8,7 @@ int p(int x){
   int i, s, w;
   s = 0;
   w = 0;
-  for(i = 1; i < n; i++){
+  for(i = 0; i < n; i++){
     if(A[i] > x){
       return 0;
     }
@@ -20,7 +20,7 @@ int p(int x){
       w += A[i];
     }
   }
-return s <= k;
+return s < k;
 }
 
 int main(){
